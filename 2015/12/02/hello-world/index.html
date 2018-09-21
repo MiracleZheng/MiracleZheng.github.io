@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Spring Security | MiraZheng</title>
+  <title>hexo+yilia+github博客搭建 | MiraZheng</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面">
-<meta name="keywords" content="restful,springSecurity">
+  <meta name="description" content="搭建个人的博客。博客有静态博客和动态博客，动态博客是用WordPress+mysql+云主机搭建，静态是hexo+yilia+github博客搭建。他们各有优缺点，动态是方便操作，后台在手。缺点是随着博客的增多，服务器压力增大，难维护。静态博客是，以nodejs为平台，都是静态页面，无后台。服务器是借用github的。静态博客的发布需要有一定网页前端的基础，至少懂得HTML、js、css等，我觉得">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spring Security">
-<meta property="og:url" content="http://yoursite.com/2013/12/02/My-New-Post/index.html">
+<meta property="og:title" content="hexo+yilia+github博客搭建">
+<meta property="og:url" content="http://yoursite.com/2015/12/02/hello-world/index.html">
 <meta property="og:site_name" content="MiraZheng">
-<meta property="og:description" content="附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面">
+<meta property="og:description" content="搭建个人的博客。博客有静态博客和动态博客，动态博客是用WordPress+mysql+云主机搭建，静态是hexo+yilia+github博客搭建。他们各有优缺点，动态是方便操作，后台在手。缺点是随着博客的增多，服务器压力增大，难维护。静态博客是，以nodejs为平台，都是静态页面，无后台。服务器是借用github的。静态博客的发布需要有一定网页前端的基础，至少懂得HTML、js、css等，我觉得">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-20T11:58:45.164Z">
+<meta property="og:updated_time" content="2018-09-21T09:54:22.871Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spring Security">
-<meta name="twitter:description" content="附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面">
+<meta name="twitter:title" content="hexo+yilia+github博客搭建">
+<meta name="twitter:description" content="搭建个人的博客。博客有静态博客和动态博客，动态博客是用WordPress+mysql+云主机搭建，静态是hexo+yilia+github博客搭建。他们各有优缺点，动态是方便操作，后台在手。缺点是随着博客的增多，服务器压力增大，难维护。静态博客是，以nodejs为平台，都是静态页面，无后台。服务器是借用github的。静态博客的发布需要有一定网页前端的基础，至少懂得HTML、js、css等，我觉得">
   
     <link rel="alternative" href="/atom.xml" title="MiraZheng" type="application/atom+xml">
   
@@ -155,354 +154,44 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-My-New-Post" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Spring Security
+      hexo+yilia+github博客搭建
     </h1>
   
 
         
-        <a href="/2013/12/02/My-New-Post/" class="archive-article-date">
-  	<time datetime="2013-12-02T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2013-12-02</time>
+        <a href="/2015/12/02/hello-world/" class="archive-article-date">
+  	<time datetime="2015-12-02T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>支持集群环境<br>跨应用工作<br>session控制<br>控制用户权限<br>防护与身份验证相关的攻击<a id="more"></a></p>
-<p>springSecurity 身份验证<br>SpringSocial 第三方认证<br>Spring Security Auth  管理App TOKEN</p>
-<h3 id="RESTful-API"><a href="#RESTful-API" class="headerlink" title="RESTful API"></a>RESTful API</h3><p>  1.用URL描述资源，而非行为<br>  2.用HTTP方法描述行为，使用HTTP状态码描述不同的结果<br>  3.使用json交互数据<br>  4.只是一种风格，非强制标准</p>
-<h3 id="REST-成熟度模型"><a href="#REST-成熟度模型" class="headerlink" title="REST 成熟度模型"></a>REST 成熟度模型</h3><p>   使用http作为传输模式<br>   引用资源概念<br>   使用不同的Http状态码表示不同的结果<br>   使用超媒体：在资源的表达中包含链接信息（谷歌</p>
-<h3 id="JsonView"><a href="#JsonView" class="headerlink" title="JsonView"></a>JsonView</h3><p>  使用接口声明多个视图<br>  在值对象的get方法上指定视图<br>  在Controller方法上指定视图</p>
-<p>ReSponseBody将请求体映射到请求参数中<br>日期类型参数的处理（前后台分离）<br>@Valid 注解和BindingResult验证请求参数的合法性并处理校验结果<br>@NOTBlack   （javax.validation.constraints包 ，还可以自定义错误信息@NOTBlack(message=”不能为空“)  ）<br>此外还有很多的验证注解</p>
-<p>BindingResult ：是使用@Valid +@NOTBlack验证出错时，不会进方法体，为了让进入方法体并打印出其错误使用BindingResult</p>
-<h3 id="异常捕捉"><a href="#异常捕捉" class="headerlink" title="异常捕捉"></a>异常捕捉</h3><p> springboot可以自动响应错误信息 浏览器错误信息是html信息，app是json<br> 浏览器: 可以自定义错误页面,/templates/error或者/templates/public/error下可自动识别（404,。。。）<br> APP   ：定义异常 新建 XXXException类，该类继承RunTimeException<br>         处理异常 新建HandleXXXException类，类上注解 @ControllerAdvice，在新建处理方法,参数是被处理的类，方法上加注解@ExceptionHandler(UserNotExesitException.class)<br>         @ResponseBody<br>         @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)</p>
-<p>代码如下：<br>public class UserNotExesitException extends RuntimeException {<br>    private static final long serialVersionUID = -7034897190745766939L;<br>    private int id;<br>    public UserNotExesitException (int id) {<br>        super(“ user not exesit”);<br>        this.id = id;<br>    }<br>    public static long getSerialVersionUID () {<br>        return serialVersionUID;<br>    }<br>    public int getId () {<br>        return id;<br>    }<br>    public void setId (int id) {<br>        this.id = id;<br>    }<br>}</p>
-<p>@ControllerAdvice<br>public class UserControllerExceptionHandle {<br>@ExceptionHandler(UserNotExesitException.class)<br>@ResponseBody<br>@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)<br>public Map&lt;String,Object&gt;  handleUserNotExesitException( UserNotExesitException e){<br>    Map&lt;String,Object&gt; map=new HashMap&lt;&gt;();<br>    map.put(“id”,e.getId());<br>    map.put(“msg”,e.getMessage());<br>    return map;<br>}<br>}</p>
-<h3 id="RESTful的三种拦截机制"><a href="#RESTful的三种拦截机制" class="headerlink" title="RESTful的三种拦截机制"></a>RESTful的三种拦截机制</h3><p>  过滤器：只能得到请求和响应，不能知道是哪个控制器，哪个方法<br>  拦截器：能得到请求和响应，能知道方法和控制器，不能得到参数 （因为在dispatchServlet里preHandle在处理参数之前<br>  切片：     知道方法，对象，还有参数值    不能 能得到请求和响应</p>
-<h3 id="文件的上传和下载"><a href="#文件的上传和下载" class="headerlink" title="文件的上传和下载"></a>文件的上传和下载</h3><p>  上传：利用Multipart上传，File file=new File(a1,a2).//a1图片路径，a2文件名字<br>  下载：<br>  try (InputStream inputStream = new FileInputStream(new File(folder + id + “.txt”));<br>             OutputStream outputStream = response.getOutputStream();) {<br>            response.setContentType(“application/x-download”);<br>            response.addHeader(“Content-Disposition”, “attachment;filename=text.txt”);<br>            org.apache.tomcat.util.http.fileupload.IOUtils.copy(inputStream, outputStream);<br>        }</p>
-<h3 id="异步处理REST服务"><a href="#异步处理REST服务" class="headerlink" title="异步处理REST服务"></a>异步处理REST服务</h3><p>  Callable 异步处理 (由主线程和副线程组成，Callable开一条新线程<br>  DeferredResult 异步处理(有两个应用，app1发送http请求消息给队列，监听队列，一旦有消息就交给App2处理，DeferredResult连接接两个联系的应用： 异步的拦截器和同步的配置不同，用configureAsyncSupport</p>
-<h3 id="使用swagger自动生成html文档，"><a href="#使用swagger自动生成html文档，" class="headerlink" title="使用swagger自动生成html文档，"></a>使用swagger自动生成html文档，</h3><p>  @apiOpreation(value=”方法描述”）<br>  @apiMOdelPrpperty(value=”属性描述”）<br>  @ApiParam(value=”参数描述“）</p>
-<h3 id="使用wireMock快速伪造RESTful服务"><a href="#使用wireMock快速伪造RESTful服务" class="headerlink" title="使用wireMock快速伪造RESTful服务"></a>使用wireMock快速伪造RESTful服务</h3><h3 id="Security（添加securit依赖"><a href="#Security（添加securit依赖" class="headerlink" title="Security（添加securit依赖"></a>Security（添加securit依赖</h3><p>  基于表单的认证<br>（首先配置类，继承WebSecurityConfigurerAdapter<br>    http.formLogin()<br>                .and()<br>                .authorizeRequests()<br>                .anyRequest()<br>                .authenticated();<br>）</p>
-<p>  自定义用户认证逻辑 UserDetails<br>  处理用户校验逻辑 User<br>（新建自定义类，类上加@Compenet,继承UserDetailsService,返回User类<br>）</p>
-<p>  处理密码加密解密 PasswordEncoder<br>（需在配置类上配置，自定义密码加密类型<br>）</p>
-<p>  自定义登录界面<br>    http.formLogin()<br>                .loginPage(“/signIn.html”)<br>                .loginProcessingUrl(“/authentication/form”) //此处与action想对应   （一直有错，未配出）<br>                .and()<br>                .authorizeRequests()<br>                .antMatchers(“/signIn.html”)<br>                .permitAll()<br>                .anyRequest()<br>                .authenticated();</p>
-<p>  配置不同的登陆界面    (当有配置页面时用配置，没有时用默认)<br>    @RestController<br>    public class BrowserSecurityController {<br>    RequestCache requestCache = new HttpSessionRequestCache();//获取请求路径的spring工具<br>    private Logger logger = LoggerFactory.getLogger(getClass());<br>    private RedirectStrategy  redirectStrategy=new DefaultRedirectStrategy();//spring的一个转发工具<br>    @Autowired<br>    SecurityProperties securityProperties;//系统属性配置类<br>    /**</p>
-<pre><code> * 当身份需要验证时，跳转到这里
- *
- * @param request
- * @param response
- * @return
- */
-@RequestMapping(&quot;authentication/require&quot;)
-@ResponseStatus(HttpStatus.UNAUTHORIZED)
-public SimpleResponse requireAuthentication (HttpServletRequest request, HttpServletResponse response) throws  Exception{
-    SavedRequest savedRequest = requestCache.getRequest(request, response);//获取请求对象
-    if (savedRequest != null) {
-        String targetURL = savedRequest.getRedirectUrl();//获取请求路径
-        logger.info(&quot;引发跳转的是：&quot; + targetURL);
-        if (StringUtils.endsWithIgnoreCase(targetURL, &quot;.html&quot;)) {
-            redirectStrategy.sendRedirect(request,response,securityProperties.getBrowser().getLoginPage());//转发，参数一是请求，响应，路径
-        }
-    }
-    return new SimpleResponse(&quot;访问的信息需要身份验证，请引导用户到登录页&quot;);
-}
-</code></pre><p>}        </p>
-<p>  系统配置封装<br>总类 securityProperties<br>@ConfigurationProperties(prefix = “imook.security”)<br>public class SecurityProperties {<br>    //imook.security.browser.loginPage=/demo-signIn.html的browser 映射到BrowserProperties<br>    //该处的变量名browser 需要  properties配置 imook.security.browser.loginPage=/demo-signIn.html的browser相同<br>     private BrowserProperties browser=new BrowserProperties();</p>
-<pre><code>public BrowserProperties getBrowser () {
-    return browser;
-}
-
-public void setBrowser (BrowserProperties browser) {
-    this.browser = browser;
-}
-</code></pre><p>}<br>  分类 browserProperties<br>public class BrowserProperties {<br>    private String loginPage=”/signIn.html”;<br>    public String getLoginPage () {<br>        return loginPage;<br>    }<br>    public void setLoginPage (String loginPage) {<br>        this.loginPage = loginPage;<br>    }<br>}<br>  起作用的配置类 securityConfig<br>@Configuration<br>@EnableConfigurationProperties(SecurityProperties.class)<br>public class SercurityCoreConfig {</p>
-<p>}</p>
-<p>  自定义登陆成功的处理  实现AuthenticationSuccessHandler<br>@Component(“imookAuthenticationSuccessHandler”)//为这个组件命名，名字必须与在securityConfig里的引入的变量一致<br>public class ImookAuthenticationSuccessHandler implements AuthenticationSuccessHandler {<br>    private Logger logger= LoggerFactory.getLogger(getClass());<br>    private ObjectMapper objectMapper=new ObjectMapper();//引入一个工具，把数据以json的格式写到浏览器</p>
-<pre><code>public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException{
-    logger.info(&quot;登录成功&quot;);
-    response.setContentType(&quot;application/json;charset=UTF-8&quot;);
-    response.getWriter().write(objectMapper.writeValueAsString(authentication));
-
-
-
-}
-</code></pre><p>}<br>  配置<br>http.formLogin()<br>                .loginPage(“/authentication/require”)<br>                .loginProcessingUrl(“/authentication/form”)<br>                .successHandler(imookAuthenticationSuccessHandler)//加登陆自定义成功配置<br>                .and()<br>                .authorizeRequests()<br>                .antMatchers(“/authentication/require”,<br>                        securityProperties.getBrowser().getLoginPage()).permitAll()<br>                .anyRequest()<br>                .authenticated()<br>                .and()<br>                .csrf()<br>                .disable();</p>
-<p>  自定义登录失败的处理<br>@Component(“imookAuthenticationSuccessHandler”)<br>public class ImookAuthenticationSuccessHandler implements AuthenticationSuccessHandler {<br>    private Logger logger= LoggerFactory.getLogger(getClass());<br>    private ObjectMapper objectMapper=new ObjectMapper();</p>
-<pre><code>public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException{
-    logger.info(&quot;登录成功&quot;);
-    response.setContentType(&quot;application/json;charset=UTF-8&quot;);
-    response.getWriter().write(objectMapper.writeValueAsString(authentication));
-
-
-
-}
-</code></pre><p>}<br>  配置<br>protected void configure(HttpSecurity http) throws Exception {<br>        logger.info(securityProperties.getBrowser()+” property”);<br>        http.formLogin()<br>                .loginPage(“/authentication/require”)<br>                .loginProcessingUrl(“/authentication/form”)<br>                .successHandler(imookAuthenticationSuccessHandler)<br>                .failureHandler(imookAuthenticationFailureHandler)//加登陆自定义失败配置<br>                .and()<br>                .authorizeRequests()<br>                .antMatchers(“/authentication/require”,<br>                        securityProperties.getBrowser().getLoginPage()).permitAll()<br>                .anyRequest()<br>                .authenticated()<br>                .and()<br>                .csrf()<br>                .disable();<br>    }</p>
-<p>  配置不同的登陆后的响应方式（页面或者JSON）        </p>
-<p>  添加枚举类（登陆类型）<br>public enum  LoginType {<br>    REDIRECT,<br>    JSON<br>}<br>browserProperties类添加上loginType属性，并默认为DIREXIT,<br>public class BrowserProperties {</p>
-<pre><code>private LoginType loginType=LoginType.JSON;
-
-private String loginPage=&quot;/signIn.html&quot;;
-
-public String getLoginPage () {
-    return loginPage;
-}
-public void setLoginPage (String loginPage) {
-    this.loginPage = loginPage;
-}
-public LoginType getLoginType () {
-    return loginType;
-}
-public void setLoginType (LoginType loginType) {
-    this.loginType = loginType;
-}
-</code></pre><p>}</p>
-<p>  成功响应 继承SavedRequestAwareAuthenticationSuccessHandler<br>@Component(“imookAuthenticationSuccessHandler”)<br>public class ImookAuthenticationSuccessHandler<br>         //implements AuthenticationSuccessHandler<br>        extends SavedRequestAwareAuthenticationSuccessHandler {<br>    private Logger logger = LoggerFactory.getLogger(getClass());<br>    private ObjectMapper objectMapper = new ObjectMapper();<br>    @Autowired<br>    SecurityProperties securityProperties;<br>    public void onAuthenticationSuccess (HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {<br>        logger.info(“登录成功”);<br>        if (LoginType.JSON.equals(securityProperties.getBrowser().getLoginType())) {<br>            response.setContentType(“application/json;charset=UTF-8”);<br>            response.getWriter().write(objectMapper.writeValueAsString(authentication));<br>        } else {<br>            super.onAuthenticationSuccess(request, response, authentication);<br>        }<br>    }<br>}<br>  失败响应 继承SimpleUrlAuthenticationFailureHandler<br>@Component(“imookAuthenticationFailureHandler”)<br>public class ImookAuthenticationFailureHandler<br>//implements AuthenticationFailureHandler<br>  extends SimpleUrlAuthenticationFailureHandler<br>{<br>   private Logger logger= LoggerFactory.getLogger(getClass());<br>   private ObjectMapper objectMapper=new ObjectMapper();<br>   @Autowired<br>   SecurityProperties securityProperties;</p>
-<pre><code>public    void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException authenticationException) throws IOException, ServletException{
-    logger.info(&quot;d登录失败&quot;);
-    if(LoginType.JSON.equals(securityProperties.getBrowser().getLoginType())){
-        response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
-        response.setContentType(&quot;application/json;charset=UTF-8&quot;);
-        response.getWriter().write(objectMapper.writeValueAsString(authenticationException));
-    }else {
-        super.onAuthenticationFailure(request,response,authenticationException);
-    }
-}
-</code></pre><p>}</p>
-<p>  配置 properties<br>imook.security.browser.loginType=REDIRECT        </p>
-<h3 id="生成图形验证码"><a href="#生成图形验证码" class="headerlink" title="生成图形验证码"></a>生成图形验证码</h3><p>  根据随机数生成图片<br>  将随机数存在session中<br>  将生成的图片写在接口的响应中</p>
-<p>  1新建一个Image类<br>public class ImageCode {<br>    private BufferedImage image;<br>    private String code;<br>    private LocalDateTime expireTime;//期望时间<br>    public ImageCode (BufferedImage image, String code, int expireIn) {<br>        this.image = image;<br>        this.code = code;<br>        this.expireTime = LocalDateTime.now().plusSeconds(expireIn);<br>    }<br>    public ImageCode (BufferedImage image, String code, LocalDateTime expireTime) {<br>        this.image = image;<br>        this.code = code;<br>        this.expireTime = expireTime;<br>    }<br>……//get（） set（）方法<br>}<br>  2 生成图形验证码<br>@RestController<br>public class VolidateCodeController {<br>    public static final String SESSION_KEY = “SESSION_KEY_IMAGE_CODE”;<br>    private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();//获得session的spring工具</p>
-<pre><code>@GetMapping(&quot;/code/image&quot;)
-public void createCode (HttpServletRequest request, HttpServletResponse response) throws IOException {
-    ImageCode imageCode = createImageCode(request);
-    sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_KEY, imageCode);
-    ImageIO.write(imageCode.getImage(), &quot;JPEG&quot;, response.getOutputStream());//将图片写到响应里
-}
-public ImageCode createImageCode (HttpServletRequest request) {
-..........//生成验证码和其图片
-    return new ImageCode(buffImg, code, 60);
-}
-</code></pre><p>}<br>  3 处理验证码异常<br>  3.1 新建一个验证验证码的过滤器，放到usernamepasswordfilter前面，该过滤器继承OncePerRequestFilter</p>
-<p>public class VolidateCodeFiltere extends OncePerRequestFilter {</p>
-<pre><code>private AuthenticationFailureHandler authenticationFailureHandler;
-private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();
-
-protected void doFilterInternal (HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
-        throws ServletException, IOException {
-    if (StringUtils.equals(&quot;/authentication/form&quot;, request.getRequestURI()) &amp;&amp; StringUtils.endsWithIgnoreCase(request.getMethod(), &quot;post&quot;)) {
-        try {
-            validate(new ServletWebRequest(request));
-        } catch (VolidateCodeException volidateCodeException) {
-            authenticationFailureHandler.onAuthenticationFailure(request,response, volidateCodeException);
-            return;
-        }
-    }
-    filterChain.doFilter(request, response);
-}
-
-private void validate (ServletWebRequest request) throws ServletException {
-    ImageCode sessionInCode = (ImageCode) sessionStrategy.getAttribute(request, VolidateCodeController.SESSION_KEY);
-    String codeInRequest = ServletRequestUtils.getStringParameter(request.getRequest(), &quot;imageCode&quot;);//获得表单的参数，值需要与输入框name的值相同
-    if (StringUtils.isBlank(codeInRequest)) {
-        throw new VolidateCodeException(&quot;验证码不能为空！&quot;);
-    }
-    if (sessionInCode == null) {
-        throw new VolidateCodeException(&quot;验证码不存在！&quot;);
-    }
-    if (!StringUtils.equals(sessionInCode.getCode(), codeInRequest)) {
-        throw new VolidateCodeException(&quot;验证码不匹配！&quot;);
-    }
-    if (sessionInCode.isExpried()) {
-        sessionStrategy.removeAttribute(request, VolidateCodeController.SESSION_KEY);
-        throw new VolidateCodeException(&quot;验证码已过期！&quot;);
-    }
-    sessionStrategy.removeAttribute(request, VolidateCodeController.SESSION_KEY);
-}
-</code></pre><p>  ………//sessionStrategy和authenticationFailureHandler的get set方法<br>    }<br>}<br>  3.2 配置security<br>        VolidateCodeFiltere volidateCodeFiltere=new VolidateCodeFiltere();<br>        volidateCodeFiltere.setAuthenticationFailureHandler(imookAuthenticationFailureHandler); //将自定义的错误处理引入</p>
-<pre><code>    http.addFilterBefore(volidateCodeFiltere, UsernamePasswordAuthenticationFilter.class)  //添加验证验证码的过滤器，放到usernamepasswordfilter前面
-            .formLogin()
-            .loginPage(&quot;/authentication/require&quot;)
-            .loginProcessingUrl(&quot;/authentication/form&quot;)
-            .successHandler(imookAuthenticationSuccessHandler)
-            .failureHandler(imookAuthenticationFailureHandler)
-            .and()
-            .authorizeRequests()
-            .antMatchers(&quot;/authentication/require&quot;,
-                    securityProperties.getBrowser().getLoginPage(),
-                    &quot;/code/image&quot;).permitAll()
-            .anyRequest()
-            .authenticated()
-            .and()
-            .csrf()
-            .disable();
-}
-</code></pre><p>   3.3 继承AuthenticationException<br>   public class VolidateCodeException extends AuthenticationException {<br>    public VolidateCodeException(String msg)<br>    {<br>        super(msg);<br>    }<br>   }<br>   3.4 成功和错误处理调用父类的错误处理<br>   例如：<br>   if(LoginType.JSON.equals(securityProperties.getBrowser().getLoginType())){<br>            response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());<br>            response.setContentType(“application/json;charset=UTF-8”);<br>            response.getWriter().write(objectMapper.writeValueAsString(new SimpleResponse(exception.getMessage()))); //省去错误打印出堆栈信息，只打印错误信息 new SimpleResponse(exception.getMessage())<br>        }else {<br>            super.onAuthenticationFailure(request,response,exception);<br>        }</p>
-<h3 id="图片验证重构代码"><a href="#图片验证重构代码" class="headerlink" title="图片验证重构代码"></a>图片验证重构代码</h3><p>  参数、拦截接口 、生成逻辑  配置<br>  参数配置：配置验证图片属性：长度、宽度等，将其配置在properties文件上<br>  新建属性配置类：ImageCodeProperties<br>  加到securityProperties里<br>  private ValidateCodeProperties validateCode=new ValidateCodeProperties();<br>  然后以获取值的方式获取，例如：securityProperties.getValidateCode().getImage().getWidth()</p>
-<h4 id="拦截接口配置："><a href="#拦截接口配置：" class="headerlink" title="拦截接口配置："></a>拦截接口配置：</h4><p>properties配置 imook.security.validateCode.image.url=/user/,/user/*        //获取值StringUtils.splitByWholeSeparatorPreserveAllTokens(securityProperties.getValidateCode().getImage().getUrl(), “,”)<br>在图片属性配置类ImageCodeProperties<br>过滤器实现InitializingBean，实现afterPropertiesSet方法<br>public void afterPropertiesSet () throws ServletException {<br>        super.afterPropertiesSet();<br>        String[] url = StringUtils.splitByWholeSeparatorPreserveAllTokens(securityProperties.getValidateCode().getImage().getUrl(), “,”);<br>        for(String usr:url){<br>            urls.add(usr);<br>        }<br>        urls.add(“/authentication/form”);<br>    }<br>SecurityConfig配置<br>ValidateCodeFilter validateCodeFilter=new ValidateCodeFilter();<br>          validateCodeFilter.setAuthenticationFailureHandler(myFailureHandler);<br>          validateCodeFilter.setSecurityProperties(securityProperties);<br>          validateCodeFilter.afterPropertiesSet();    </p>
-<h4 id="生成逻辑配置"><a href="#生成逻辑配置" class="headerlink" title="生成逻辑配置"></a>生成逻辑配置</h4><p>定义一个接口ValidateCodeGenerator<br>实现这个接口ValidateCodeGenerator（生成验证码代码）<br>配置<br>@Configuration<br>public class ValidateCodeConfig {</p>
-<pre><code>@Autowired
-SecurityProperties securityProperties;
-@Bean
-@ConditionalOnMissingBean(name=&quot;imageCodeGenerate&quot;)  //以条件方式：当在spring容器中存在imageCodeGenerate这个BEAN就不执行该方法
-public ValidateCodeGenerator imageCodeGenerate()
-{
-    ImageCodeGenerator imageCodeGenerator=new ImageCodeGenerator();
-    imageCodeGenerator.setSecurityProperties(securityProperties);
-    return imageCodeGenerator;
-}
-</code></pre><p>}</p>
-<h4 id="更高级的更换代码（不更改已在的方法，重写这个方法"><a href="#更高级的更换代码（不更改已在的方法，重写这个方法" class="headerlink" title="更高级的更换代码（不更改已在的方法，重写这个方法"></a>更高级的更换代码（不更改已在的方法，重写这个方法</h4><p>@Component(“imageCodeGenerate”)<br>public class DemoImageCodeValidate implements ValidateCodeGenerator{<br>    public    ImageCode createImageCode (ServletWebRequest request){<br>        System.out.println(“更高级的图形验证码生成代码”);<br>        return null;<br>    }<br>}</p>
-<h4 id="记住密码"><a href="#记住密码" class="headerlink" title="记住密码"></a>记住密码</h4><p>  登录界面添加CheckBox,name 一定要是remember-me<br>  配置 </p>
-<pre><code>@Autowired
-DataSource datasource; //在properties已经配置好，例如spring.datasource.driver-class-name等
-@Autowired
-UserDetailsService userDetailsService;
-//配置数据源
-@Bean
- public PersistentTokenRepository persistentTokenRepository(){
-     JdbcTokenRepositoryImpl jdbcTokenRepository=new JdbcTokenRepositoryImpl();
-     jdbcTokenRepository.setDataSource(datasource);
-</code></pre><p>//         jdbcTokenRepository.setCreateTableOnStartup(true);  //启动是添加数据表，persistent_logins,只能第一次执行<br>         return jdbcTokenRepository;<br>     }<br>        http.addFilterBefore(volidateCodeFiltere, UsernamePasswordAuthenticationFilter.class)<br>                .formLogin()<br>                .loginPage(“/authentication/require”)<br>                .loginProcessingUrl(“/authentication/form”)<br>                .successHandler(imookAuthenticationSuccessHandler)<br>                .failureHandler(imookAuthenticationFailureHandler)<br>                .and()<br>                .rememberMe()//记住密码配置<br>                .tokenRepository(persistentTokenRepository())//配置数据源<br>                .tokenValiditySeconds(securityProperties.getBrowser().getRememberMeSeconds()//配置过期时间<br>                .userDetailsService(userDetailsService)//配置userDetailsService<br>                .and()<br>                .authorizeRequests()<br>                .antMatchers(“/authentication/require”,<br>                        securityProperties.getBrowser().getLoginPage(),<br>                        “/code/image”).permitAll()<br>                .anyRequest()<br>                .authenticated()<br>                .and()<br>                .csrf()<br>                .disable();</p>
-<h3 id="实现验证码登录"><a href="#实现验证码登录" class="headerlink" title="实现验证码登录"></a>实现验证码登录</h3><pre><code>开发验证码接口
-1实现验证生成接口 
-2定义验证码发送接口，且实现验证码发送接口   
-</code></pre><p> （发送接口如果不使用@Compenet,就需要在配置类配置<br>     @Bean<br>    @ConditionalOnMissingBean(SmsCodeSend.class)<br>    public SmsCodeSend getSmsCodeSend(){<br>        return new SmsCodeSendImpl();<br>        }<br>    ）<br>     3写发送接口的controller<br>     @GetMapping(“/code/smsCode”)<br>     public void createSmsCode (HttpServletRequest request, HttpServletResponse response) throws IOException, ServletRequestBindingException {<br>        ValidateCode SmsCode = smsCodeGenerator.createImageCode(new ServletWebRequest(request));//获取验证码对象<br>        String mobile = ServletRequestUtils.getRequiredStringParameter(request, “mobile”);//获取请求中的参数mobile<br>        sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_KEY_SMS, SmsCode);//存入session<br>        smsCodeSender.send(mobile, SmsCode.getCode());//发送<br>    }</p>
-<pre><code>校验短信验证码并登录  （和逻辑验证密码一样）
-</code></pre><p>需自定义    先AuthenticationToken<br>不需        再AuthenticationManager<br>需自定义    再AuthenticationProvider 判断token再获取Token    实现AuthenticationProvider<br>需自定义    再filter<br>            再验证filter<br>            再配置token，manager，provider，filter<br>@Component<br>public class SmsCodeAuthenticationSecurityConfig extends SecurityConfigurerAdapter&lt;DefaultSecurityFilterChain, HttpSecurity&gt; {</p>
-<pre><code>@Autowired
-ImookAuthenticationFailureHandler imookAuthenticationFailureHandler;
-@Autowired
-ImookAuthenticationSuccessHandler imookAuthenticationSuccessHandler;
-@Autowired
-private UserDetailsService userDetailsService;
-
-public void configure (HttpSecurity http) throws Exception {
-    SmsCodeAuthenticationFilter smsCodeAuthenticationFilter = new SmsCodeAuthenticationFilter();
-    smsCodeAuthenticationFilter.setAuthenticationManager(http.getSharedObject(AuthenticationManager.class));
-    smsCodeAuthenticationFilter.setAuthenticationSuccessHandler(imookAuthenticationSuccessHandler);
-    smsCodeAuthenticationFilter.setAuthenticationFailureHandler(imookAuthenticationFailureHandler);
-
-    SmsCodeAuthenticationProvider smsCodeAuthenticationProvider=new SmsCodeAuthenticationProvider();
-    smsCodeAuthenticationProvider.setUserDetailsService(userDetailsService);
-
-    http.authenticationProvider(smsCodeAuthenticationProvider)
-    .addFilterAfter(smsCodeAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
-}
-</code></pre><p>}</p>
-<pre><code>        再配置验证filter
-protected void configure(HttpSecurity http) throws Exception {
-
-    VolidateCodeFiltere volidateCodeFiltere=new VolidateCodeFiltere();
-    volidateCodeFiltere.setAuthenticationFailureHandler(imookAuthenticationFailureHandler);
-    volidateCodeFiltere.setSecurityProperties(securityProperties);
-    volidateCodeFiltere.afterPropertiesSet();
-
-
-
-    SmsCodeFiltere smsCodeFilter=new SmsCodeFiltere();
-    smsCodeFilter.setAuthenticationFailureHandler(imookAuthenticationFailureHandler);
-    smsCodeFilter.setSecurityProperties(securityProperties);
-    smsCodeFilter.afterPropertiesSet();
-
-    http
-            .addFilterBefore(smsCodeFilter,UsernamePasswordAuthenticationFilter.class)  //添加smsCodeFilter
-            .addFilterBefore(volidateCodeFiltere, UsernamePasswordAuthenticationFilter.class)
-            .formLogin()
-            .loginPage(&quot;/authentication/require&quot;)
-            .loginProcessingUrl(&quot;/authentication/form&quot;)
-            .successHandler(imookAuthenticationSuccessHandler)
-            .failureHandler(imookAuthenticationFailureHandler)
-            .and()
-            .rememberMe()
-            .tokenRepository(persistentTokenRepository())
-            .tokenValiditySeconds(securityProperties.getBrowser().getRememberMeSeconds())
-            .userDetailsService(userDetailsService)
-            .and()
-            .authorizeRequests()
-            .antMatchers(&quot;/authentication/require&quot;,
-                    securityProperties.getBrowser().getLoginPage(),
-                    &quot;/code/*&quot;).permitAll()
-            .anyRequest()
-            .authenticated()
-            .and()
-            .csrf()
-            .disable()
-            .apply(smsCodeAuthenticationSecurityConfig) //配置SMS的工具类（配置token,manager，provider，filter的配置类）
-    ;
-}
-
-
-
-
- 重构代码
-</code></pre><h3 id="使用springSocial开发第三方登录"><a href="#使用springSocial开发第三方登录" class="headerlink" title="使用springSocial开发第三方登录"></a>使用springSocial开发第三方登录</h3><pre><code>OAuth协议
-要解决的问题
-各种角色
-运行协议
-</code></pre><h3 id="session-管理"><a href="#session-管理" class="headerlink" title="session 管理"></a>session 管理</h3><pre><code> protected void configure(HttpSecurity http) throws Exception {
-    ImageCodeFilter imageCodeFilter=new ImageCodeFilter();
-    imageCodeFilter.setMyAuthenticationFaulier(myAuthenticationFaulier);
-    imageCodeFilter.setSecurityProperties(securityProperties);
-    imageCodeFilter.afterPropertiesSet();
-    http.addFilterBefore(imageCodeFilter, UsernamePasswordAuthenticationFilter.class)
-            .formLogin()
-            .loginPage(&quot;/authentication/require&quot;)
-            .loginProcessingUrl(&quot;/authentication/form&quot;)
-            .successHandler(myAuthenticationSuccess)
-            .failureHandler(myAuthenticationFaulier)
-            .and()
-            .sessionManagement()//session管理
-            .invalidSessionUrl(&quot;/invalid/code&quot;)//session失效后的处理路径
-            .maximumSessions(1)//最大session数
-            .expiredSessionStrategy(new MyExpiredSessionStrategy())//记录谁踢了session，实现SessionInformationExpiredStrategy接口，实现里面的onExpiredSessionDetected方法
-            .maxSessionsPreventsLogin(true)//session达到最大数量，就不允许登录
-            .and()
-            .and()
-            .authorizeRequests()
-            .antMatchers(&quot;/authentication/require&quot;,
-                    securityProperties.getBrowserProperties().getLoginPage(),
-                    &quot;/image/code&quot;,&quot;/session/invalid&quot;).permitAll()
-            .anyRequest()
-            .authenticated()
-            .and()
-            .csrf()
-            .disable();
-}
-
-
- session超时处理  在springboot上控制 spring.session.timeout=  （ 最少一分钟，单位为秒
- 并发控制(多端登陆)
- 情况一：允许多处登陆，最新登陆的session更替旧的session
-
- 情况二：只允许登陆最大限制的session，若session最大限制为1，那么只能登陆一处
-</code></pre><h3 id="集群session"><a href="#集群session" class="headerlink" title="集群session"></a>集群session</h3><pre><code> 1.1 添加依赖
- &lt;dependency&gt;
-        &lt;groupId&gt;org.springframework.session&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-session-data-redis&lt;/artifactId&gt;
-&lt;/dependency&gt;
-1.2 配置 spring.session.store-type=REDIS
-1.3（可无） 启动类中添加@EnableCaching  //开启缓存管理模式
-            @EnableRedisHttpSession //开启redis集中式session管理，所有的session都存放到了redis中
-
-
-退出登录
-1.默认方式（无需security配置） 路径为/logout  清楚session-&gt;清楚remebmer-&gt;清楚securitycontext-&gt;放回登录界面
-2.自定义方式      配置如下
-    .logout()
-    .logoutUrl(&quot;/signOut&quot;)
-          //.logoutSuccessUrl(&quot;/login.html&quot;) //配置成功后跳转路径
-            .logoutSuccessHandler(myLoginOutSuccess)//配置成功后的处理  ，与logoutSuccessUrl不能重复
-            .deleteCookies(&quot;JSESSION&quot;)
-</code></pre><p>springSecurity oAuth开发app认证框架</p>
-<p>基本的token参数配置<br>使用JWT替换默认的Token<br>扩展和解析JWT的信息</p>
-<p>内部类：                </p>
-<p>使用内部类最吸引人的原因是：每个内部类都能独立地继承一个（接口的）实现，所以无论外围类是否已经继承了某个（接口的）实现，对于内部类都没有影响。</p>
+        <p>搭建个人的博客。博客有静态博客和动态博客，动态博客是用WordPress+mysql+云主机搭建，静态是hexo+yilia+github博客搭建。他们各有优缺点，动态是方便操作，后台在手。缺点是随着博客的增多，服务器压力增大，难维护。静态博客是，以nodejs为平台，都是静态页面，无后台。服务器是借用github的。静态博客的发布需要有一定网页前端的基础，至少懂得HTML、js、css等，我觉得它最大的优点就是访问速度快。<br><a id="more"></a></p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h3><p>   安装 git（官网下载安装）<br>   安装 nodejs （官网下载安装）   npm<br>   安装 hexo<br>   注册github<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org  <span class="comment">#tb镜像</span></span><br><span class="line">$ cnpm install -g hexo-cli</span><br><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure></p>
+<h3 id="搭建环境-1"><a href="#搭建环境-1" class="headerlink" title="搭建环境"></a>搭建环境</h3><p>   新建一个文件夹 blog<br>   进入文件夹，右键git bash<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<p>   之后文件夹会产生一些文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment">#产生文件</span></span><br><span class="line">$ hexo s <span class="comment">#启动服务</span></span><br></pre></td></tr></table></figure></p>
+<p>  之后会提供你一个 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 地址，在浏览器上运行可以展示默认的博客主题。<br>  注：_config.yml该文件问配置文件，做一些相应的配置。hexo官网可参考。</p>
+<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>   默认主题肯定满足不了需求，为此hexo提供了很多主题。下面一起来跟换主题吧！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next  <span class="comment">#下载主题到themes下</span></span><br></pre></td></tr></table></figure>
+<p>下载完了之后，修改_config.yml文件theme的配置，将其对应的值改为next<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
+<p>之后可以在github相应的仓库下看到你博客的代码<br>注：每个主题都有对应的_config.yml配置文件，上面的是根目录的。<br>    有些主题可能还会有其他的配置。 </p>
+<h3 id="注册github-用邮箱注册-和配置github"><a href="#注册github-用邮箱注册-和配置github" class="headerlink" title="注册github(用邮箱注册)和配置github"></a>注册github(用邮箱注册)和配置github</h3><p>   注册github，命名为 githubUserName.git.io<br>   配置 ssh-key<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"你的github注册邮件地址"</span></span><br></pre></td></tr></table></figure></p>
+<pre><code>输入以上代码后，连续三个enter后，复制C:/user/adminstrator/.ssh/id_rsa.pub里的内容
+打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：将复制的内容粘贴到key里
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你的github注册邮件地址"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com	 <span class="comment">#测试配置是否成功</span></span><br></pre></td></tr></table></figure>
+<p>配置你的账号和邮箱<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"liuxianan"</span>// 你的github用户名，非昵称</span><br><span class="line">$ git config --global user.email  <span class="string">"xxx@qq.com"</span>// 填写你的github注册邮箱</span><br></pre></td></tr></table></figure></p>
+<p>到此之后你就可以通过 githubUserName.github访问你的博客了</p>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>   1.如果你想通过你的域名访问你的博客。步骤如下：<br>   2.到你域名的供应商服务台上，添加解析记录。需添加2条：两条都是CNAME,一个@，一个www,记录值都是githubUserName.github.io<br>   3.到你的github上，在你相应的仓库的setting下的GitHub Pages的Custom domain填上你的域名。<br>   4.到你的blog/source下新建一个CNAME文件，无任何后缀，在里面写上你的域名：<a href="http://www.xxxxx.cn" target="_blank" rel="noopener">www.xxxxx.cn</a></p>
+<p>   到此为止，就Game over!</p>
 <p>#<span id="busuanzi_container_page_pv">  本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span></p>
 
       
@@ -533,33 +222,7 @@ protected void configure(HttpSecurity http) throws Exception {
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">restful</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">springSecurity</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/默认分类//" class="article-tag-list-link color5">默认分类</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -609,7 +272,7 @@ protected void configure(HttpSecurity http) throws Exception {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2013/12/02/My-New-Post/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2015/12/02/hello-world/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -623,15 +286,20 @@ protected void configure(HttpSecurity http) throws Exception {
   
 <nav id="article-nav">
   
-    <a href="/2015/12/02/文件流/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/21/logback-五种常用配置/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          文件流
+          spring- logback 五种常用配置
         
       </div>
     </a>
   
+  
+    <a href="/2015/12/02/springboot-实践/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">springboot 实践</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -656,7 +324,7 @@ protected void configure(HttpSecurity http) throws Exception {
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#RESTful-API"><span class="toc-number">1.</span> <span class="toc-text">RESTful API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#REST-成熟度模型"><span class="toc-number">2.</span> <span class="toc-text">REST 成熟度模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JsonView"><span class="toc-number">3.</span> <span class="toc-text">JsonView</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#异常捕捉"><span class="toc-number">4.</span> <span class="toc-text">异常捕捉</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RESTful的三种拦截机制"><span class="toc-number">5.</span> <span class="toc-text">RESTful的三种拦截机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件的上传和下载"><span class="toc-number">6.</span> <span class="toc-text">文件的上传和下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#异步处理REST服务"><span class="toc-number">7.</span> <span class="toc-text">异步处理REST服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用swagger自动生成html文档，"><span class="toc-number">8.</span> <span class="toc-text">使用swagger自动生成html文档，</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用wireMock快速伪造RESTful服务"><span class="toc-number">9.</span> <span class="toc-text">使用wireMock快速伪造RESTful服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Security（添加securit依赖"><span class="toc-number">10.</span> <span class="toc-text">Security（添加securit依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成图形验证码"><span class="toc-number">11.</span> <span class="toc-text">生成图形验证码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图片验证重构代码"><span class="toc-number">12.</span> <span class="toc-text">图片验证重构代码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#拦截接口配置："><span class="toc-number">12.1.</span> <span class="toc-text">拦截接口配置：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生成逻辑配置"><span class="toc-number">12.2.</span> <span class="toc-text">生成逻辑配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#更高级的更换代码（不更改已在的方法，重写这个方法"><span class="toc-number">12.3.</span> <span class="toc-text">更高级的更换代码（不更改已在的方法，重写这个方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#记住密码"><span class="toc-number">12.4.</span> <span class="toc-text">记住密码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现验证码登录"><span class="toc-number">13.</span> <span class="toc-text">实现验证码登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用springSocial开发第三方登录"><span class="toc-number">14.</span> <span class="toc-text">使用springSocial开发第三方登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#session-管理"><span class="toc-number">15.</span> <span class="toc-text">session 管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#集群session"><span class="toc-number">16.</span> <span class="toc-text">集群session</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建环境"><span class="toc-number">1.1.</span> <span class="toc-text">搭建环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建环境-1"><span class="toc-number">1.2.</span> <span class="toc-text">搭建环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更换主题"><span class="toc-number">1.3.</span> <span class="toc-text">更换主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注册github-用邮箱注册-和配置github"><span class="toc-number">1.4.</span> <span class="toc-text">注册github(用邮箱注册)和配置github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#域名解析"><span class="toc-number">1.5.</span> <span class="toc-text">域名解析</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
