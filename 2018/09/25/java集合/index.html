@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>java集合 | MiraZheng</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。   HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希表中的一个">
+  <meta name="description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。     HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java集合">
 <meta property="og:url" content="http://yoursite.com/2018/09/25/java集合/index.html">
 <meta property="og:site_name" content="MiraZheng">
-<meta property="og:description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。   HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希表中的一个">
+<meta property="og:description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。     HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-25T06:43:27.115Z">
+<meta property="og:updated_time" content="2018-09-25T06:46:40.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java集合">
-<meta name="twitter:description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。   HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希表中的一个">
+<meta name="twitter:description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。     HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希">
   
     <link rel="alternative" href="/atom.xml" title="MiraZheng" type="application/atom+xml">
   
@@ -174,15 +174,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。
-  HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希表中的一个键值对。
-
-
-  Entry对象唯一表示一个键值对，有四个属性：
-  -K key 键对象
-  -V value 值对象
-  -int hash 键对象的hash值
-  -Entryentry 指向链表中下一个Entry对象，可为null，表示当前Entry对象在链表尾部
+        <p>   一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。<br>     HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希表中的一个键值对。</p>
+<pre><code>Entry对象唯一表示一个键值对，有四个属性：
+-K key 键对象
+-V value 值对象
+-int hash 键对象的hash值
+-Entryentry 指向链表中下一个Entry对象，可为null，表示当前Entry对象在链表尾部
 
 
 
