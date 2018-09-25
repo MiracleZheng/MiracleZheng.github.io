@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>spring- logback 五种常用配置 | MiraZheng</title>
+  <title>Archives: 2018 | MiraZheng</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="spring- logback 五种常用配置">
-<meta property="og:type" content="article">
-<meta property="og:title" content="spring- logback 五种常用配置">
-<meta property="og:url" content="http://yoursite.com/2016/09/21/logback-五种常用配置/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="MiraZheng">
+<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
 <meta property="og:site_name" content="MiraZheng">
-<meta property="og:description" content="spring- logback 五种常用配置">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-21T09:55:19.186Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="spring- logback 五种常用配置">
-<meta name="twitter:description" content="spring- logback 五种常用配置">
+<meta name="twitter:title" content="MiraZheng">
   
     <link rel="alternative" href="/atom.xml" title="MiraZheng" type="application/atom+xml">
   
@@ -154,179 +150,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-logback-五种常用配置" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      spring- logback 五种常用配置
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/09/25/java集合/" class="archive-article-date">
+  	<time datetime="2018-09-25T06:09:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-25</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/09/25/java集合/">java集合</a>
     </h1>
   
 
-        
-        <a href="/2016/09/21/logback-五种常用配置/" class="archive-article-date">
-  	<time datetime="2016-09-21T09:41:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="spring-logback-五种常用配置"><a href="#spring-logback-五种常用配置" class="headerlink" title="spring- logback 五种常用配置"></a>spring- logback 五种常用配置</h3><a id="more"></a>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">   &lt;configuration&gt;</span><br><span class="line">	&lt;!--	//用于上下文名称，用于区分不同应用程序的记录--&gt;</span><br><span class="line">	&lt;contextName&gt;<span class="variable">$&#123;t3&#125;</span>&lt;/contextName&gt;</span><br><span class="line">	&lt;!--	//上下文--&gt;</span><br><span class="line">	&lt;property name=<span class="string">"t1"</span> value=<span class="string">"23/2"</span>/&gt;&lt;!--//定义变量，用来引用--&gt;</span><br><span class="line">	&lt;property name=<span class="string">"t2"</span> value=<span class="string">"3/4/5"</span>/&gt;</span><br><span class="line">	&lt;property name=<span class="string">"t3"</span> value=<span class="string">"ShakeSpare"</span>/&gt;</span><br><span class="line">	&lt;!--	//得到时间格式字符串，key是它的键，datePattern是值--&gt;</span><br><span class="line">	　</span><br><span class="line">	&lt;timestamp key=<span class="string">"bySecond"</span> datePattern=<span class="string">"yyyyMMdd'T'HHmmss"</span>/&gt;</span><br><span class="line">	&lt;!--//配置日志打印在控制台上--&gt;</span><br><span class="line">	&lt;appender name=<span class="string">"con1"</span> class=<span class="string">"ch.qos.logback.core.ConsoleAppender"</span>&gt;<span class="string">'</span></span><br><span class="line"><span class="string">		&lt;encoder&gt;</span></span><br><span class="line"><span class="string">			&lt;pattern&gt;%d&#123;HH:mm:ss.SSS&#125; [%thread] %-5level %logger&#123;36&#125; - %msg%n&lt;/pattern&gt;</span></span><br><span class="line"><span class="string">		&lt;/encoder&gt;</span></span><br><span class="line"><span class="string">	&lt;/appender&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">	&lt;appender name="con2" class="ch.qos.logback.core.FileAppender"&gt;</span></span><br><span class="line"><span class="string">		&lt;file&gt;$&#123;t1&#125;/$&#123;t2&#125;/bySecond.log&lt;/file&gt;</span></span><br><span class="line"><span class="string">		&lt;prudent&gt;false&lt;/prudent&gt;</span></span><br><span class="line"><span class="string">		&lt;!--// 如果是 true，日志会被安全的写入文件，即使其他的FileAppender也在向此文件做写入操作，效率低，默认是 false。--&gt;</span></span><br><span class="line"><span class="string">		&lt;append&gt;true&lt;/append&gt;&lt;!--//为true时，日志追加在文件尾巴，为false时，日志文件清空，重新加载--&gt;</span></span><br><span class="line"><span class="string">		&lt;encoder&gt;</span></span><br><span class="line"><span class="string">			&lt;pattern&gt;%date %level [%thread] %logger&#123;10&#125; [%file:%line] %msg%n&lt;/pattern&gt;</span></span><br><span class="line"><span class="string">		&lt;/encoder&gt;</span></span><br><span class="line"><span class="string">	&lt;/appender&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">	&lt;appender name="con3" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;&lt;!--//滚动生成日志文件，在指定条件下生成日志　　　　　　　--&gt;　　　</span></span><br><span class="line"><span class="string">		&lt;rollingPolicy</span></span><br><span class="line"><span class="string">				class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;&lt;!--//时间回滚策略,如果用file子节点设置了文件，那么文件名字就不会变--&gt;</span></span><br><span class="line"><span class="string">			&lt;!--//必要节点，包含文件名及“%d”转换符，“%d”可以包含一个java.text.SimpleDateFormat指定的时间格式，如：%d&#123;yyyy-MM&#125;。　--&gt;　　　　　　　　　　　　　　　　　</span></span><br><span class="line"><span class="string">			&lt;fileNamePattern&gt;logFile.%d&#123;yyyy-MM-dd&#125;.log&lt;/fileNamePattern&gt;　&lt;!--//%d&#123;yyyy-MM-dd&#125;--&gt;</span></span><br><span class="line"><span class="string">			&lt;maxHistory&gt;30&lt;/maxHistory&gt;　&lt;!--//保留最近30天的日志　　--&gt;　　　　　　　　　</span></span><br><span class="line"><span class="string">		&lt;/rollingPolicy&gt;</span></span><br><span class="line"><span class="string">		　　　　　　　　　　　　</span></span><br><span class="line"><span class="string">		&lt;encoder&gt;　　　　　　　　　　　　　　</span></span><br><span class="line"><span class="string">			&lt;pattern&gt;%-4relative [%thread] %-5level %logger&#123;35&#125; - %msg%n&lt;/pattern&gt;　　　　　　　　　　　　</span></span><br><span class="line"><span class="string">		&lt;/encoder&gt;</span></span><br><span class="line"><span class="string">		　　　　　　　　　　</span></span><br><span class="line"><span class="string">	&lt;/appender&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">	&lt;appender name="con4" class="ch.qos.logback.core.ConsoleAppender"&gt;</span></span><br><span class="line"><span class="string">		&lt;filter class="ch.qos.logback.classic.filter.LevelFilter"&gt;&lt;!--//级别过滤器--&gt;</span></span><br><span class="line"><span class="string">			&lt;level&gt;INFO&lt;/level&gt;&lt;!--//日志级别--&gt;</span></span><br><span class="line"><span class="string">			&lt;onMatch&gt;ACCEPT&lt;/onMatch&gt; &lt;!--//匹配接收--&gt;</span></span><br><span class="line"><span class="string">			&lt;onMismatch&gt;DENY&lt;/onMismatch&gt; &lt;!--//不匹配拒绝--&gt;</span></span><br><span class="line"><span class="string">		&lt;/filter&gt;</span></span><br><span class="line"><span class="string">		&lt;encoder&gt;</span></span><br><span class="line"><span class="string">			&lt;pattern&gt;</span></span><br><span class="line"><span class="string">				%-4relative [%thread] %-5level %logger&#123;30&#125; - %msg%n</span></span><br><span class="line"><span class="string">			&lt;/pattern&gt;</span></span><br><span class="line"><span class="string">		&lt;/encoder&gt;</span></span><br><span class="line"><span class="string">	&lt;/appender&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">	&lt;appender name="con5" class="ch.qos.logback.core.ConsoleAppender"&gt;</span></span><br><span class="line"><span class="string">		&lt;!-- 过滤掉 TRACE 和 DEBUG 级别的日志--&gt;</span></span><br><span class="line"><span class="string">		&lt;filter class="ch.qos.logback.classic.filter.ThresholdFilter"&gt;&lt;!--//临界过滤器，过滤低于INFO的日志--&gt;</span></span><br><span class="line"><span class="string">			&lt;level&gt;INFO&lt;/level&gt;</span></span><br><span class="line"><span class="string">		&lt;/filter&gt;</span></span><br><span class="line"><span class="string">		&lt;encoder&gt;</span></span><br><span class="line"><span class="string">			&lt;pattern&gt;</span></span><br><span class="line"><span class="string">				%-4relative [%thread] %-5level %logger&#123;30&#125; - %msg%n</span></span><br><span class="line"><span class="string">			&lt;/pattern&gt;</span></span><br><span class="line"><span class="string">		&lt;/encoder&gt;</span></span><br><span class="line"><span class="string">	&lt;/appender&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">	&lt;logger name="com.example.demo.mapper" level="debug"/&gt;</span></span><br><span class="line"><span class="string">	&lt;root level="debug"&gt;</span></span><br><span class="line"><span class="string">		&lt;appender-ref ref="con1"&gt;&lt;/appender-ref&gt;</span></span><br><span class="line"><span class="string">		&lt;appender-ref ref="con2"&gt;&lt;/appender-ref&gt;</span></span><br><span class="line"><span class="string">		&lt;appender-ref ref="con3"&gt;&lt;/appender-ref&gt;</span></span><br><span class="line"><span class="string">		&lt;appender-ref ref="con4"&gt;&lt;/appender-ref&gt;</span></span><br><span class="line"><span class="string">		&lt;appender-ref ref="con5"&gt;&lt;/appender-ref&gt;</span></span><br><span class="line"><span class="string">	&lt;/root&gt;</span></span><br><span class="line"><span class="string">&lt;/configuration&gt;</span></span><br></pre></td></tr></table></figure>
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2016/09/21/logback-五种常用配置/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/09/25/java集合/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          java集合
-        
-      </div>
-    </a>
   
   
-    <a href="/2015/12/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">hexo+yilia+github博客搭建</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#spring-logback-五种常用配置"><span class="toc-number">1.</span> <span class="toc-text">spring- logback 五种常用配置</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -350,8 +216,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
