@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>java集合 | MiraZheng</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。">
+  <meta name="description" content="HashMap与HashTable一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java集合">
 <meta property="og:url" content="http://yoursite.com/2018/09/25/java集合/index.html">
 <meta property="og:site_name" content="MiraZheng">
-<meta property="og:description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。">
+<meta property="og:description" content="HashMap与HashTable一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-25T07:08:14.027Z">
+<meta property="og:updated_time" content="2018-09-25T07:48:00.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java集合">
-<meta name="twitter:description" content="一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。">
+<meta name="twitter:description" content="HashMap与HashTable一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。">
   
     <link rel="alternative" href="/atom.xml" title="MiraZheng" type="application/atom+xml">
   
@@ -174,11 +174,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。<br><a id="more"></a><br>  HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希表中的一个键值对。</p>
+        <h3 id="HashMap与HashTable"><a href="#HashMap与HashTable" class="headerlink" title="HashMap与HashTable"></a>HashMap与HashTable</h3><p>一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。<br><a id="more"></a><br>  HashMap和HashTable都使用哈希表来存储键值对。在数据结构上是基本相同的，都创建了一个继承自Map.Entry的私有的内部类Entry，每一个Entry对象表示存储在哈希表中的一个键值对。</p>
 <p>  Entry对象唯一表示一个键值对，有四个属性：<br>  -K key 键对象<br>  -V value 值对象<br>  -int hash 键对象的hash值<br>  -Entryentry 指向链表中下一个Entry对象，可为null，表示当前Entry对象在链表尾部</p>
 <p>  在其算法上，HashTable的初始值是11，扩容为2n-1,是素数，较少冲突，容易选择容量。HashMap的初始值是2的4次方为，扩容为2,好计算不用取模，容易冲突，但是效率高。</p>
 <p>  遍历常用2中方式：<br>  for (Object key:map.keySet()){<br>            System.out.println(key+” “+map.get(key));<br>        }<br>           //推荐，适合量大<br>  for(Map.Entry&lt;String,String&gt; entry: map.entrySet()){<br>            System.out.println(entry.getValue()+entry.getKey());<br>        }</p>
-<p>  AbstractMap抽象类：(HashMap继承AbstractMap)覆盖了equals()和hashCode()方法以确保两个相等映射返回相同的哈希码。如果两个映射大小相等、包含同样的键且每个键在这两个映射中对应的值都相同，则这两个映射相等。映射的哈希码是映射元素哈希码的总和，其中每个元素是Map.Entry接口的一个实现。因此，不论映射内部顺序如何，两个相等映射会报告相同的哈希码。<br>  SortedMap接口：（TreeMap继承自SortedMap）它用来保持键的有序顺序。SortedMap接口为映像的视图(子集)，包括两个端点提供了访问方法。除了排序是作用于映射的键以外，处理SortedMap和处理SortedSet一样。添加到SortedMap实现类的元素必须实现Comparable接口，否则您必须给它的构造函数提供一个Comparator接口的实现。TreeMap类是它的唯一一份实现。（有点不理解）<br>  HashMap 输出无序<br>  TreeMap输出有序</p>
+<h3 id="HashMap与TreeMap"><a href="#HashMap与TreeMap" class="headerlink" title="HashMap与TreeMap"></a>HashMap与TreeMap</h3><p>  AbstractMap抽象类：(HashMap继承AbstractMap)覆盖了equals()和hashCode()方法以确保两个相等映射返回相同的哈希码。如果两个映射大小相等、包含同样的键且每个键在这两个映射中对应的值都相同，则这两个映射相等。映射的哈希码是映射元素哈希码的总和，其中每个元素是Map.Entry接口的一个实现。因此，不论映射内部顺序如何，两个相等映射会报告相同的哈希码。<br>  SortedMap接口：（TreeMap继承自SortedMap）它用来保持键的有序顺序。SortedMap接口为映像的视图(子集)，包括两个端点提供了访问方法。除了排序是作用于映射的键以外，处理SortedMap和处理SortedSet一样。添加到SortedMap实现类的元素必须实现Comparable接口，否则您必须给它的构造函数提供一个Comparator接口的实现。TreeMap类是它的唯一一份实现。（有点不理解）<br>  HashMap 输出无序<br>  TreeMap输出有序</p>
+<h3 id="ArrayList-与-LinedList"><a href="#ArrayList-与-LinedList" class="headerlink" title="ArrayList 与 LinedList"></a>ArrayList 与 LinedList</h3><p>   ArrayList是以动态数组的方式实现的，适合随机存取。不适合批量数据存取。<br>   LinedList是以链表的方式实现的，适合批量存取。</p>
 
       
 
@@ -301,7 +302,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#HashMap与HashTable"><span class="toc-number">1.</span> <span class="toc-text">HashMap与HashTable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashMap与TreeMap"><span class="toc-number">2.</span> <span class="toc-text">HashMap与TreeMap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ArrayList-与-LinedList"><span class="toc-number">3.</span> <span class="toc-text">ArrayList 与 LinedList</span></a></li></ol>
                     </div>
                 </span>
             </div>
