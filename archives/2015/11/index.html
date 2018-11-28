@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>MiraZheng</title>
+  <title>Archives: 2015/11 | MiraZheng</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="MiraZheng">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2015/11/index.html">
 <meta property="og:site_name" content="MiraZheng">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -152,636 +152,47 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-spring源码解解析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/27/spring源码解解析/">spring源码解析</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/27/spring源码解解析/" class="archive-article-date">
-  	<time datetime="2018-09-27T03:19:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-27</time>
-</a>
-        
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="注解解析"><a href="#注解解析" class="headerlink" title="注解解析"></a>注解解析</h3><h4 id="Bean"><a href="#Bean" class="headerlink" title="@Bean"></a>@Bean</h4><pre><code>value：bean的ID
-</code></pre><h4 id="CompenentScan"><a href="#CompenentScan" class="headerlink" title="@CompenentScan"></a>@CompenentScan</h4><pre><code> value：指定要扫描的包
- excludeFilters=Filter[]：指定扫描的时候用什么规则排除哪些组件
- includeFilters=Filter[]：指定扫描的时候只需要包含哪些组件
-@ComponentScan(value = &quot;com.config&quot;,excludeFilters ={ @ComponentScan.Filter(type= FilterType.ANNOTATION,classes = UserDao.class)},useDefaultFilters = false)
-</code></pre><h4 id="CompenentScan-相当于包含读多个-CompenentScan"><a href="#CompenentScan-相当于包含读多个-CompenentScan" class="headerlink" title="@CompenentScan 相当于包含读多个@CompenentScan"></a>@CompenentScan 相当于包含读多个@CompenentScan</h4><pre><code>@ComponentScans(value = {@ComponentScan(value = &quot;com.config&quot;,excludeFilters ={ @ComponentScan.Filter(type= FilterType.ANNOTATION,classes = UserDao.class)},useDefaultFilters = false)})
-</code></pre><h4 id="CompenentScans"><a href="#CompenentScans" class="headerlink" title="@CompenentScans"></a>@CompenentScans</h4><h4 id="Scope"><a href="#Scope" class="headerlink" title="@Scope"></a>@Scope</h4><pre><code>@Scope 调整作用域
-prototype: 多实例的，ioc容器启动并不会调用方法创建对象放在容器中。
-           每次获取的时候才会调用方法创建对象
-singleton: 单实例的（默认值)ioc容器启动会调用方法创建对象放在容器中。
-           以后每次获取就是直接从容器（map.get())中拿
-request:同一次请求创建一个实例
-session:同一个session创建一个实例
-</code></pre><h4 id="Lazy"><a href="#Lazy" class="headerlink" title="@Lazy"></a>@Lazy</h4><pre><code>懒加载：
-  单实例bean，默认在容器启动
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
+    
       
       
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/27/spring源码解解析/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2015" class="archive-year">2015</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java集合" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+        <div class="archives">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/25/java集合/">java集合</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/25/java集合/" class="archive-article-date">
-  	<time datetime="2018-09-25T06:09:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="HashMap与HashTable"><a href="#HashMap与HashTable" class="headerlink" title="HashMap与HashTable"></a>HashMap与HashTable</h3><p>一说到hashMap和HashTable,肯定会冒出一句话：HashTable是同步的安全的，key,value都不能为null。hashMap是不同步的，非安全的，key,value都不能为null。<br>
-        
-          <a class="article-more-a" href="/2018/09/25/java集合/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/25/java集合/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-logback-五种常用配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/21/logback-五种常用配置/">spring- logback 五种常用配置</a>
-    </h1>
-  
-
-        
-        <a href="/2016/09/21/logback-五种常用配置/" class="archive-article-date">
-  	<time datetime="2016-09-21T09:41:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="spring-logback-五种常用配置"><a href="#spring-logback-五种常用配置" class="headerlink" title="spring- logback 五种常用配置"></a>spring- logback 五种常用配置</h3>
-        
-          <a class="article-more-a" href="/2016/09/21/logback-五种常用配置/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/09/21/logback-五种常用配置/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-springboot-实践" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/02/springboot-实践/">springboot 实践</a>
-    </h1>
-  
-
-        
-        <a href="/2015/12/02/springboot-实践/" class="archive-article-date">
-  	<time datetime="2015-12-02T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一、服务器推送SSE-配置在哪？"><a href="#一、服务器推送SSE-配置在哪？" class="headerlink" title="一、服务器推送SSE 配置在哪？"></a>一、服务器推送SSE 配置在哪？</h3>
-        
-          <a class="article-more-a" href="/2015/12/02/springboot-实践/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/12/02/springboot-实践/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/02/hello-world/">hexo+yilia+github博客搭建</a>
-    </h1>
-  
-
-        
-        <a href="/2015/12/02/hello-world/" class="archive-article-date">
-  	<time datetime="2015-12-02T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>搭建个人的博客。博客有静态博客和动态博客，动态博客是用WordPress+mysql+云主机搭建，静态是hexo+yilia+github博客搭建。他们各有优缺点，动态是方便操作，后台在手。缺点是随着博客的增多，服务器压力增大，难维护。静态博客是，以nodejs为平台，都是静态页面，无后台。服务器是借用github的。静态博客的发布需要有一定网页前端的基础，至少懂得HTML、js、css等，我觉得它最大的优点就是访问速度快。<br>
-        
-          <a class="article-more-a" href="/2015/12/02/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/12/02/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-发送邮件-qq-163“" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/02/发送邮件-qq-163“/">发送邮件 qq 163</a>
-    </h1>
-  
-
-        
-        <a href="/2015/12/02/发送邮件-qq-163“/" class="archive-article-date">
-  	<time datetime="2015-12-02T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p> QQ与163发送邮件<br>
-        
-          <a class="article-more-a" href="/2015/12/02/发送邮件-qq-163“/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/12/02/发送邮件-qq-163“/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-文件流" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/02/文件流/">文件流</a>
-    </h1>
-  
-
-        
-        <a href="/2015/12/02/文件流/" class="archive-article-date">
-  	<time datetime="2015-12-02T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>文件流<br>
-        
-          <a class="article-more-a" href="/2015/12/02/文件流/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/12/02/文件流/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Timer" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/01/Timer/">Timer</a>
-    </h1>
-  
-
-        
-        <a href="/2015/11/01/Timer/" class="archive-article-date">
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2015/11/01/Timer/" class="archive-article-date">
   	<time datetime="2015-11-01T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-01</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###java定时调度任务   ：基于给定的时间点，给定的时间间隔或者给定的执行次数</p>
-<p>####Timer的纸上谈兵<br>Timer定义：有且仅有一个后台线程对多个业务线程进行定时定频率的调度<br>主要构件 timer timetask</p>
-<p>####schedule 的四种用法<br>schedule(task,time) 在时间等于或超过time的时候执行且执行一次task<br>schedule(task,timer,period) 时间等于或超过time是执行首次task，之后每个period毫秒重复执行一次task<br>schedule(task,delay) 等待delay毫秒后且仅执行一次task<br>schedule(task,delay,period) 等待delay毫秒后执行首次task，之后每个period毫秒重复执行一次task</p>
-<p>scheduleAtFixedRate(task,timer,period) 时间等于或超过time是执行首次task，之后每个period毫秒重复执行一次task<br>scheduleAtFixedRate(task,delay,period) 等待delay毫秒后执行首次task，之后每个period毫秒重复执行一次task</p>
-<p>####timetask的两个重要的函数<br>timetask.cancle() 取消当前timetask的任务<br>timetask.scheduleExecutionTime() 返回此任务最近实际执行的已安排执行的时间</p>
-<p>####Timer的其他函数<br>Timer.cancel() 终止计时器，丢弃所有当前已安排的任务<br>Timer.purge() 从此计时器的任务队列中移除所有已取消的任务，返回任务书</p>
-<p>####schedule与scheduleAtFixRate的区别<br>两种情况看区别<br>1、首次计划执行的时间早于当前的时间<br>schedule方法<br> fixed-delay：如果第一次执行时间被delay了，随后的执行时间按照上一次执行完成的时间点进行计算<br>schedule方法<br> fixed-delay：如果第一次执行时间被delay了，随后的执行时间按照上一次开始的时间点进行计算，并且<br> 为了赶上进度会多次执行任务，因此TimerTasK中的执行体需要考虑同步<br>2、任务执行所需时间超出任务的执行周期间隔<br>schedule方法<br>下一次执行时间相对于上一次实际执行完成的时间点，因此执行时间会不断延后<br>schedule方法<br>下一次执行时间相对于上一次开始的时间点，因此执行时间一般不会延后，因此存在并发性</p>
-<p>####Timer的缺陷<br>1、管理并发任务的缺陷<br>2、当任务抛出异常时的缺陷 如果TimerTask抛出RunTimeException,Timer会停止所有的任务运行</p>
-<p>####Timer的使用禁区<br>对时效性要求较高的多任务并发作用<br>对复杂任务的调度</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/11/01/Timer/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-My-New-Post" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2013/12/02/My-New-Post/">Spring Security</a>
+      <a class="archive-article-title" href="/2015/11/01/Timer/">Timer</a>
     </h1>
   
 
-        
-        <a href="/2013/12/02/My-New-Post/" class="archive-article-date">
-  	<time datetime="2013-12-02T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2013-12-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>支持集群环境<br>跨应用工作<br>session控制<br>控制用户权限<br>防护与身份验证相关的攻击
-        
-          <a class="article-more-a" href="/2013/12/02/My-New-Post/#more">more >></a>
-        
-      
+        <div class="article-info info-on-right">
+          
+          
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">restful</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">springSecurity</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/默认分类//" class="article-tag-list-link color5">默认分类</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2013/12/02/My-New-Post/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -804,9 +215,9 @@ session:同一个session创建一个实例
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

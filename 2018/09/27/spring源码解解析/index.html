@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="MiraZheng">
 <meta property="og:description" content="注解解析@Beanvalue：bean的ID @CompenentScan value：指定要扫描的包  excludeFilters=Filter[]：指定扫描的时候用什么规则排除哪些组件  includeFilters=Filter[]：指定扫描的时候只需要包含哪些组件 @ComponentScan(value = &amp;quot;com.config&amp;quot;,excludeFilters =">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-27T03:53:21.474Z">
+<meta property="og:updated_time" content="2018-10-26T09:34:14.469Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring源码解析">
 <meta name="twitter:description" content="注解解析@Beanvalue：bean的ID @CompenentScan value：指定要扫描的包  excludeFilters=Filter[]：指定扫描的时候用什么规则排除哪些组件  includeFilters=Filter[]：指定扫描的时候只需要包含哪些组件 @ComponentScan(value = &amp;quot;com.config&amp;quot;,excludeFilters =">
@@ -187,7 +187,9 @@ singleton: 单实例的（默认值)ioc容器启动会调用方法创建对象�
            以后每次获取就是直接从容器（map.get())中拿
 request:同一次请求创建一个实例
 session:同一个session创建一个实例
-</code></pre><h4 id="Lazy"><a href="#Lazy" class="headerlink" title="@Lazy"></a>@Lazy</h4>
+</code></pre><h4 id="Lazy"><a href="#Lazy" class="headerlink" title="@Lazy"></a>@Lazy</h4><pre><code>懒加载：
+  单实例bean，默认在容器启动
+</code></pre>
       
 
       
